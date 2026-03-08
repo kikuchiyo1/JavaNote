@@ -47,6 +47,13 @@ eg：
     byte[] bytes = s.getBytes();
     fos.write(bytes);
     fos.write(bytes,1,3); // 还可以传入两个int参数，表示从bytes数组的1索引开始写入3个字节
+在以byte数组写入文件时，要维护好读取的字节数，否则可能会导致数据丢失或者文件损坏
+eg:
+    byte[] bytes = new byte[1024];
+    int len;
+    while((len = bis.read(bytes)) != -1){
+        bis.write(bytes,0,len);
+    }
 
 3.写入完成后要记得关闭流，否则可能会导致数据丢失或者文件损坏
 
