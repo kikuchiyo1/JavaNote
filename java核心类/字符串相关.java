@@ -1,17 +1,13 @@
 package java核心类;
+
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 
 public class 字符串相关 {
     public static void main(String[] args) throws UnsupportedEncodingException {
-        StringBuilder sb = new StringBuilder(1024); // n是初始容量 如果不指定默认是16 当字符串长度超过容量时会自动扩容
-        for (int i = 0; i < 1000; i++) {
-            sb.append(",")
-                    .append(114514)
-                    .append(i); // append方法可以链式调用
-        }
-        String s = sb.toString(); // 最后调用toString方法得到最终的字符串
-            System.out.println(s);
+        String[] s = {"1145141919810","a","b"}; // 最后调用toString方法得到最终的字符串
+        String news = String.join("*", s);
+        System.out.println(news);
         Integer n = 114514;
 
     }

@@ -5,9 +5,9 @@ import java.net.Socket;
 
 //实现了客户端上传文件，服务端接收文件并保存文件至服务端本地
 public class TCPPractice03_Client {
-    static String now_path = "src\\网络编程\\";
+    static String now_path = "src\\";
     static File file = new File(now_path + "Roxy.jpg");
-    public static void main(String[] args) throws IOException {
+    static void main(String[] args) throws IOException {
         Socket socket = new Socket("127.0.0.1", 11451);
 
         try (
