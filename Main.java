@@ -1,17 +1,20 @@
-import java.util.*;
+import java.io.File;
 
 public class Main {
-
     public static void main(String[] args) {
+        File dir = new File("C:\\Users\\EODC\\AppData\\Local\\Unity");
 
-        Scanner sc = new Scanner(System.in);
+        File[] files = dir.listFiles();
 
-        String s1 = sc.nextLine();
-        String s2 = sc.nextLine();
-        if (s1.contains(s2)){
-            System.out.println(s1.indexOf(s2));
-        } else {
-            System.out.println(-1);
+        if (files != null) {
+            System.out.println(dir.getPath());
+            for (File file : files) {
+                if (file.isDirectory()) {
+                    System.out.println("[文件夹] " + file.getName());
+                } else {
+                    System.out.println("[文件] " + file.getName());
+                }
+            }
         }
     }
 }

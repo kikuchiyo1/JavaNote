@@ -12,4 +12,7 @@ public class Idea常用快捷键 {
 
 4. Ctrl + F12 查看当前类所有方法
 
+5. Alt + Insert 快速生成代码
+
+6. Ctrl + Shift + / 快速多行注释
 */
