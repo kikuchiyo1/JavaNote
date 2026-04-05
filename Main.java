@@ -1,21 +1,31 @@
-import java.io.File;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        File dir = new File("C:\\Users\\EODC\\AppData\\Local\\Unity");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-        File[] files = dir.listFiles();
+        int[] count = new int[10];
 
-        if (files != null) {
-            System.out.println(dir.getPath());
-            for (File file : files) {
-                if (file.isDirectory()) {
-                    System.out.println("[文件夹] " + file.getName());
-                } else {
-                    System.out.println("[文件] " + file.getName());
-                }
+        for (int i = a; i <= b; i++) {
+            int num = i;
+
+            while (num > 0) {
+                int digit = num % 10;
+                count[digit]++;
+                num /= 10;
             }
         }
+        for (int i = 0; i < 10; i++) {
+            System.out.print(count[i]);
+            if (i < 9) {
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+
+        sc.close();
     }
 }
 
