@@ -1,4 +1,4 @@
-package java核心类;
+package java类;
 
 public class 记录类 {
     public static void main(String[] args) {

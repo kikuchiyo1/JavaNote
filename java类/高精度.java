@@ -1,6 +1,4 @@
-package java核心类;
-
-import javax.imageio.ImageTranscoder;
+package java类;
 
 public class 高精度 {
     public static void main(String[] args) {

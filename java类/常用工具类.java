@@ -1,7 +1,6 @@
-package java核心类;
+package java类;
 
 import java.security.SecureRandom;
-import java.util.Random;
 
 public class 常用工具类 {
     public static void main(String[] args) {

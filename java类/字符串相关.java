@@ -1,7 +1,8 @@
-package java核心类;
+package java类;
 
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class 字符串相关 {
     public static void main(String[] args) throws UnsupportedEncodingException {
@@ -9,7 +10,20 @@ public class 字符串相关 {
         String news = String.join("*", s);
         System.out.println(news);
         Integer n = 114514;
-
+        StringBuilder sb = new StringBuilder(16);
+        sb.append(n);
+        System.out.println(sb.toString());
+        String str = "114514";
+        String res;
+        Deque<Integer> numStack = new LinkedList<>();
+        Deque<String> strStack = new LinkedList<>();
+        for(int i=0;i<str.length();i++){
+            char ch = str.charAt(i);
+            String num = "";
+            if(Character.isDigit(ch)){
+                num = num + ch;
+            }
+        }
     }
 }
 

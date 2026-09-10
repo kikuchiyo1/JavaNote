@@ -1,4 +1,4 @@
-package java核心类;
+package java类;
 
 public class 数组工具类Arrays {
 }

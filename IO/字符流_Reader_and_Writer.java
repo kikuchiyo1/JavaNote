@@ -16,7 +16,7 @@ public class 字符流_Reader_and_Writer {
 }
 
  /*
-Java的IO流分为字节流和字符流两类，InputStream和OutputStream是字节流，Reader和Writer就是是字符流（这四个类都是抽象类）
+Java的IO流分为字节流和字符流两类，InputStream和OutputStream是字节流，Reader和Writer就是字符流（这四个类都是抽象类）
 字符流的主要应用场景就是处理各种文本数据
 字符流的底层是字节流，很多东西都一样，只记录一下不一样的地方
 
